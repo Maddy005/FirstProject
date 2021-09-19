@@ -1,0 +1,367 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400;1,500&display=swap');
+
+
+:root{
+    --main-color: #d8d0d3;
+    --blue: #6590c7;
+    --white:#fff;
+    --green:#1ab992;
+    --pink:#b87de9;
+    --dark:#d9ff00;
+    --rr:#8db1f5;
+    --dd:#74a0da;
+    --backdrop-filter-blur: blur(5px);
+
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+}
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, var(--pink), var(--blue));
+    font-size: 16px;
+    background-attachment: fixed;
+    font-family: 'poppins', sans-serif;
+    font-weight: 300;
+    color: var(--black);
+    line-height: 1.5;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    padding: 5vh 13px;
+
+}
+body::before{
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--green);
+    z-index: -1;
+    opacity: 0.12;
+}
+a{
+    text-decoration: none;
+}
+h1,h2{
+    font-weight: 600;
+}
+h3,h4,h5,h6{
+    font-weight: 500;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+   
+}
+
+section{
+    background-color: var(--rr);
+    border:1px solid var(--dd);
+    min-height: 90vh;
+    border-radius: 30px;
+    backdrop-filter: var(--backdrop-filter-blur);
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container{
+  
+    padding: 0 40px;
+    width: 100%;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.align-items-center{
+    align-items: center;
+}
+.hidden{
+    display: none !important;
+}
+
+.sec-padding{
+    padding: 80px 0;
+
+}
+.section-title{
+    
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #b87de9;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #7d05b4;
+}
+
+button{
+    font-family: inherit;
+    user-select: none;
+}
+
+.btn{
+    line-height: 1.5;
+    background-color:rgb(81, 228, 228);
+    padding: 10px 25px;
+    border-radius: 30px;
+    display: inline-block;
+    color: rgb(18, 20, 18);
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid black;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #69c5d1;
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+.btn::before{
+width: 100%;
+}
+
+.btn:hover{
+    color:#7d05b4
+}
+
+.home-section{
+    display: flex;
+    padding: 120px 0;
+}
+
+.home-text,
+.home-img{
+    
+    width: 50%;
+    padding: 15px;
+   
+}
+.home-text p{
+    font-size: 18px;
+}
+.home-text h1{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.home-text h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: 0 0 30px ;
+}
+.home-text .btn{
+    margin: 0 15px 15px 0;
+}
+.home-img .img-box{
+    max-width:360px;
+    
+    background-color:#ff0022d5;
+    border-radius: 50%;
+   border: 8px solid #064044;
+   margin: auto;
+  
+    
+}
+
+.home-img .img-box img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-img{
+    
+    width: 100%;
+    padding: 0 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.about-text{
+    
+    width:350%;
+    padding: 0 15px;
+    position: relative;
+   
+}
+
+.about-img .img-box{
+    background-color:#d9ff00;
+    max-width: 380px;
+    border: 1px solid rgb(199, 2, 2);
+    margin: auto;
+    border-radius: 10px;
+    box-sizing: 3px 3px 4px solid #000;
+}
+
+.about-img .img-box{
+    width: 200%;
+
+}
+.about-text h3{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin: 20px 0;
+}
+.about-text .skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-text .skill-items{
+    background-color:#f0e8eb;
+    border: 1px solid rgb(105, 94, 94);
+    padding: 5px 15px;
+    text-transform: capitalize;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+}
+.about-tabs{
+    margin-top: 20px;
+}
+.about-tabs .tab-items{
+padding: 2px 0;
+background-color: transparent;
+border: none;
+text-transform: capitalize;
+display: inline-block;
+font-size: 20px;
+color: #7d05b4;
+font-weight: 500;
+cursor: pointer;
+margin: 0 30px 0 0;
+position: relative;
+opacity: 0.5;
+transition: all 0.3s ease;
+}
+
+.about-tabs .tab-items:last-child{
+    margin: 0;
+}
+.about-tabs .tab-items::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0%;
+    bottom: 0;
+    height: 1px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+.about-tabs .tab-items:hover::before{
+    width: 100%;
+}
+
+.about-tabs .tab-items.active::before{
+
+    width: 100%;
+    background-color: #d9ff00;
+}
+.about-text .timeline{
+    position: relative;
+
+}
+.about-text .timeline::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 5px;
+    background-color: #7d05b4;
+}
+
+.about-text .tab-content{
+ padding: 40px 0;
+ display: none;
+}
+.about-text .tab-content.active{
+ display: block;
+}
+
+.timeline-items{
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    position: relative;
+    padding: 10px 0 0 40px;
+    
+
+}
+.about-text .timeline-items::before{
+    content: '';
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    left: 0;
+    top: 16px;
+    background-color: #064044;
+    border-radius: 50%;
+}
+
+.timeline-items:last-child{
+    margin-bottom: 0;
+}
+.about-text .timeline-items .date{
+    display: block;
+    color: #7818d1;
+    font-weight: 400;
+    max-width: 0 0 10px;
+
+
+}
+.about-text .timeline-items .h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+.about-text .timeline-items .h4 span{
+    font-weight: 400;
+}
+
+
